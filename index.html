@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Muteo</title>
+	<link rel="icon" href="voice-lvl.png">
+	<!-- External CSS -->
+	<link rel="stylesheet" href="style.css">
+	
+	<!-- Poppins -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  
+  <nav>
+  	<div class="logo-nav">
+  		<img src="voice-lvl.png">
+  		<p>Muteo</p>
+  	</div>
+  	
+  	<button id="themeToggle">
+  		<img src="sun.png">
+  	</button>
+  </nav>
+
+	<div class="description">
+		Change your voice instantly
+	</div>
+	<div class="notes">
+		Change your voice in real time with ease.
+		Record, transform, and have fun with different voice effects.
+	</div>
+	
+	<div class="mjb-container">
+		<button id="uploadBtn" class="major-btn">
+			<img src="upload.png">
+			Upload Audio
+		</button>
+		
+		<button id="recordBtn" class="major-btn">
+			<img src="microphone.png">
+			Record Voice
+		</button>
+	</div>
+	<p class="note">Note: Try not to use long-duration audio (recommended under 5 minutes).</p>
+	
+	<input type="file" id="fileInput" accept="audio/*" style="display:none;">
+
+	<div id="effects">
+		<h2>Select Voice Effect</h2>
+		<div class="eb">
+			<button class="effect-btn q" data-effect="normal"><img src="normal.png">Normal</button>
+			<button class="effect-btn q" data-effect="baby"><img src="smile.png">Baby Voice</button>
+			<button class="effect-btn q" data-effect="robot"><img src="robot.png">Robot Voice</button>
+			<button class="effect-btn q" data-effect="echo"><img src="echo.png">Echo</button>
+			<button class="effect-btn q" data-effect="male"><img src="male.png">Male Voice</button>
+			<button class="effect-btn q" data-effect="female"><img src="female.png">Female Voice</button>
+		</div>
+	</div>
+	<div class="spc">
+		<button id="downloadBtn" style="display: none;" class="exp-btn">
+			<img src="save.png">
+			Export Audio
+		</button>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
